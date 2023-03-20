@@ -43,7 +43,7 @@
             </div>
             <div class="social">
                 <div> 
-                    <a target="_blank" href="https://www.linkedin.com"><span class="bi-linkedin blue"></span></a>
+                    <a onclick="shared()" target="_blank" href="https://www.linkedin.com"><span class="bi-linkedin blue"></span></a>
                 </div>
                 <div>
                     <a target="_blank" href="https://www.facebook.com"><span class="bi-facebook blue"></span></a>
@@ -58,5 +58,14 @@
         </div>
     </div>
     
+    <script>
+        function shared() {
+            window.open(
+                'https://www.linkedin.com',
+                'Partager sur Linkedin',
+                'width=600, height=400'
+            );
+        }
+    </script>
 </body>
 </html>
