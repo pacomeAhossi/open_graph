@@ -23,15 +23,48 @@
     background-color: #f4f4f4;
   }
   
- .social div a{
+ .social div a,
+ .social button{
     color: #fff;
     position: absolute;
     top: 7px;
     left: 13px;
   }
-  .social div a:hover{
+  .social button{
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  .social div a:hover,
+  .social button:hover{
     color: #000;
   }
   .social span{
     font-size: 23px;
+  }
+
+  .social button:active{
+    background: #444343da;
+  }
+  .social button::before{
+    content: "Copié";
+    position: absolute;
+    font-size: 15px;
+    top: -50px;
+    right: 0;
+    background: #5c81dc;
+    padding: 8px 10px;
+    border-radius: 20px;
+
+  }
+  .social button::after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #5c81dc;
+    transform: rotate(45deg);
   }
