@@ -43,10 +43,10 @@
             </div>
             <div class="social">
                 <div> 
-                    <a onclick="shared()" href="https://www.linkedin.com"><span class="bi-linkedin blue"></span></a>
+                    <a onclick="shareLinkedin()" href="https://www.linkedin.com"><span class="bi-linkedin blue"></span></a>
                 </div>
                 <div>
-                    <a target="_blank" href="https://www.facebook.com"><span class="bi-facebook blue"></span></a>
+                    <a onclick="shareFacebook()" target="_blank" href="https://www.facebook.com"><span class="bi-facebook blue"></span></a>
                 </div>
                 <div>
                     <a target="_blank" href="mailto:academy@lanignan.com"><span  class="bi bi-envelope-fill"></span></a>
@@ -59,13 +59,15 @@
     </div>
     
     <script>
-        function shared() {
+        function shareLinkedin() {
             window.open(
-                'https://www.linkedin.com/shareArticle?url=https://www.linkedin.com/posts/arnaud-aif_ia-revolution-robotique-activity-7043896651341533184-pjFl?utm_source=share&utm_medium=member_desktop&title=Ahah, les robots remplaceront jamais les humains 😂&summary=Veuillez accueillir le premier robot humanoïde disponible commercialement par @agilityrobotics ! 🤯',
+                'https://www.linkedin.com/shareArticle?url=https://www.linkedin.com/feed/update/urn:li:activity:7040237415575232512?utm_source=share&utm_medium=member_desktop&title=Aux francophones&summary=Aux francophones et francophiles du monde, le cabinet LANIGNAN vous souhaite une belle célébration de la journée Internationale de la Francophonie',
                 'Partager sur Linkedin',
                 'width=600, height=400'
             );
         }
+
+       
     </script>
 </body>
 </html>
