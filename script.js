@@ -17,7 +17,7 @@ button.addEventListener("click", () => {
 
 
 
-    navigator.clipboard.writeText(filteredUrl);
+    navigator.clipboard.writeText(link);
     copyText.classList.add("active");
     window.getSelection().removeAllRanges();
     setTimeout(function() {
