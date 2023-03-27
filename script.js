@@ -9,6 +9,8 @@ let baseUrlLinkedin = 'https://www.linkedin.com/posts/lanignancabinet_vousmaezri
      description = document.querySelector('meta[property="og:description"]').getAttribute("content"),
      image = document.querySelector('meta[property="og:image"]').getAttribute("content");
 
+// Partager sur Twitter
+// var twitterUrl = 'https://twitter.com/share?url=' + encodeURIComponent(url) + '&text=' + encodeURIComponent(title);
 
 let button = document.querySelector("button");
 let copyText = document.querySelector(".copy-txt");
