@@ -1,70 +1,101 @@
-.share{
-    text-align: center;
-    color: #000;
-  }
-  .social{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-  }
-  .social div{
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
-    color: #FFF !important;
-    position: relative;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.3s ease-in;
-    background: #000;
-  }
-  .social div:hover{
-    background-color: #f4f4f4;
-  }
-  
- .social div a,
- .social button{
-    color: #fff;
-    position: absolute;
-    top: 7px;
-    left: 13px;
-  }
-  .social button{
-    border: none;
-    outline: none;
-    border-radius: 10px;
-  }
+form {
+  margin-top: 30px;
+  padding: 10px;
+}
 
-  .social div a:hover,
-  .social button:hover{
-    color: #000;
-  }
-  .social span{
-    font-size: 23px;
-  }
+.share {
+  text-align: center;
+  color: #000;
+}
 
-  .social button:active{
-    background: #444343da;
-  }
-  .social button::before{
-    content: "Copié";
-    position: absolute;
-    font-size: 15px;
-    top: -50px;
-    right: 0;
-    background: #5c81dc;
-    padding: 8px 10px;
-    border-radius: 20px;
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 
-  }
-  .social button::after{
-    content: "";
-    position: absolute;
-    top: -20px;
-    right: 25px;
-    width: 10px;
-    height: 10px;
-    background: #5c81dc;
-    transform: rotate(45deg);
-  }
+.social div {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  color: #FFF !important;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  background: #000;
+}
+
+.social div:hover {
+  background-color: #f4f4f4;
+}
+
+.social div a {
+  color: #fff;
+  position: absolute;
+  top: 7px;
+  left: 13px;
+}
+
+.social button {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: #fff;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.social div a:hover,
+.social button:hover {
+  color: #000;
+}
+
+.social span {
+  font-size: 23px;
+}
+
+.social button:active {
+  background: #444343da;
+}
+
+.social button::before {
+  content: "Copié";
+  position: absolute;
+  bottom: -50px;
+  right: -10px;
+  font-size: 15px;
+  color: #fff;
+  background: #4a6aaf;
+  padding: 8px 10px;
+  border-radius: 20px;
+  display: none;
+}
+
+.social button::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 13px;
+  width: 10px;
+  height: 10px;
+  background: #4a6aaf;
+  transform: rotate(45deg);
+  display: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.social .copy-txt.active button::before,
+.social .copy-txt.active button::after {
+  display: block;
+}
