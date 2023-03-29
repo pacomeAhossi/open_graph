@@ -20,7 +20,7 @@ button.addEventListener("click", () => {
     let link =  window.location.protocol + '//' + window.location.hostname + window.location.pathname;
     let root = window.location.origin;
     let filteredUrl = link.replace(root, '');
-    navigator.clipboard.writeText(link);
+    navigator.clipboard.writeText(filteredUrl);
     copyText.classList.add("active");
     window.getSelection().removeAllRanges();
     setTimeout(function() {
